@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Update and upgrade packages, and install necessary tools for the first run
+pkg update && pkg upgrade -y
+pkg install -y git bc which
+
 HELPERS=(
   colors animation banner package switchcase
   dotfiles clone themes nvchad utility
