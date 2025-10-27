@@ -19,7 +19,19 @@ export LINK_SSH
 
 export TERM=xterm-256color 
 
+
+
+# Custom Personalized
+
+#GPG
+#export GPG_TTY=$(tty)
+
+# Git Editor
+export GIT_EDITOR=nano
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.config/lf/icons
 source $HOME/.aliases
 source $HOME/.autostart
+# Set autosuggestion color, you can remove this if you want.
+typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#dddddd,italic'
